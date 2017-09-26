@@ -15,7 +15,7 @@ public class DBUtil {
 	
 	private String username="root";
 	
-	private String password="root";
+	private String password="987654";
 	
 	Connection conn=null;
 

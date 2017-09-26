@@ -35,9 +35,9 @@ public class StudentServiceImpl implements StudentService {
 		StudentServiceImpl ssi=new StudentServiceImpl();
 		Student stu=new Student();
 		
-		stu.setUsername("lisi1");
+		stu.setUsername("ss");
 		
-		stu.setPassword("12345");
+		stu.setPassword("987654");
 		
 		ssi.insertStudent(stu);
 		

@@ -29,7 +29,7 @@ public class UploadServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("doPost!!!!!!!!!!!!");
+		System.out.println("doPost");
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		String path = this.getServletContext().getRealPath("/");	//获取服务器地址
@@ -42,7 +42,7 @@ public class UploadServlet extends HttpServlet {
 			String fname2 = fname1.substring(path_idx, fname1.length());	
 			p.write(path + "/upload/" + fname2);					// 写入 web 项目根路径下的upload文件夹中
 			out.write("文件上传成功");		*/
-		String fileName = ((ApplicationPart) p).getSubmittedFileName();
+		String fileName =  ((ApplicationPart) p).getSubmittedFileName();
 		String newFileName = System.currentTimeMillis()+fileName.substring(fileName.lastIndexOf("."));
 		String filepath = getServletContext().getRealPath("/applicant/images");
 		System.out.println("头像保存路径为："+filepath);

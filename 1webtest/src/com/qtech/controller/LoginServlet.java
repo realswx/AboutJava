@@ -69,7 +69,7 @@ public class LoginServlet extends HttpServlet {
 					System.out.println("密码错误");
 				}
 			}else {
-				System.out.println("该用户不存在");
+				System.out.println("用户不存在");
 			}
 		}
 	}
